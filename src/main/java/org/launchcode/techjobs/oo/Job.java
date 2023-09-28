@@ -91,4 +91,18 @@ public class Job {
     public int hashCode() {
         return Objects.hash(id);
     }
+
+    @Override
+    public String toString(){
+        String newLine = System.lineSeparator();
+        return newLine +
+                "ID: " + getId() + newLine +
+                "Name: " + (getName().isEmpty() ? "Data not available" : getName()) + newLine +
+                "Employer: " + (getEmployer().getValue().isEmpty() ? "Data not available" : getEmployer().getValue()) + newLine +
+                "Location: " + (getLocation().getValue().isEmpty() ? "Data not available" : getLocation().getValue()) + newLine +
+                "Position Type: " + (getPositionType().getValue().isEmpty() ? "Data not available" : getPositionType().getValue()) + newLine +
+                "Core Competency: " + (getCoreCompetency().getValue().isEmpty() ? "Data not available" : getCoreCompetency().getValue()) + newLine;
+    }
+
+
 }

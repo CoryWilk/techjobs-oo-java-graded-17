@@ -42,4 +42,49 @@ public class JobTest {
         assertNotEquals(job1, job2);
     }
 
+    @Test
+    public void testToStringStartsAndEndsWithNewLine(){
+        Job job = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
+        String newLine = System.lineSeparator();
+        String expected = newLine + "ID: " + job.getId() + newLine + "Name: " + job.getName() +
+                newLine + "Employer: " + job.getEmployer() +
+                newLine + "Location: " + job.getLocation() +
+                newLine + "Position Type: " + job.getPositionType() +
+                newLine + "Core Competency: " + job.getCoreCompetency() + newLine;
+
+        String actual = job.toString();
+
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void toStringContainsCorrectLabelsAndData(){
+        String newLine = System.lineSeparator();
+        Job job = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
+        String expected = newLine + "ID: " + job.getId() + newLine + "Name: " + job.getName() +
+                newLine + "Employer: " + job.getEmployer() +
+                newLine + "Location: " + job.getLocation() +
+                newLine + "Position Type: " + job.getPositionType() +
+                newLine + "Core Competency: " + job.getCoreCompetency() + newLine;
+
+        String actual = job.toString();
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testToStringHandlesEmptyField(){
+        String newLine = System.lineSeparator();
+        Job job = new Job("Product tester", new Employer(""), new Location(""), new PositionType("Quality control"), new CoreCompetency("Persistence"));
+        String actual = job.toString();
+
+        String expected = newLine + "ID: " + job.getId() +
+                newLine + "Name: Product tester" +
+                newLine + "Employer: Data not available" +
+                newLine + "Location: Data not available" +
+                newLine + "Position Type: Quality control" +
+                newLine + "Core Competency: Persistence" + newLine;
+
+        assertEquals(expected, actual);
+    }
+
 }
