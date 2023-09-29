@@ -58,7 +58,7 @@ public class JobTest {
     }
 
     @Test
-    public void toStringContainsCorrectLabelsAndData(){
+    public void testToStringContainsCorrectLabelsAndData(){
         String newLine = System.lineSeparator();
         Job job = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
         String expected = newLine + "ID: " + job.getId() + newLine + "Name: " + job.getName() +
