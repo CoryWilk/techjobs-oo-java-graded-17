@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="Failures in line separators">
+    <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="Fixed Test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +76,7 @@
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.TestTaskFive">
+  <component name="RunManager" selected="Gradle.Tests in 'techjobs-oo-java17-graded.test'">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.launchcode.techjobs.oo.Main" />
       <module name="techjobs-oo-java17-graded.main" />
@@ -89,30 +89,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="JobTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;org.launchcode.techjobs.oo.JobTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
     </configuration>
     <configuration name="TestTaskFive" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -162,6 +138,28 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="Tests in 'techjobs-oo-java17-graded.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="JobTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="techjobs-oo-java17-graded.test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -190,7 +188,7 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="Gradle.JobTest" />
+      <item itemvalue="Gradle.Tests in 'techjobs-oo-java17-graded.test'" />
       <item itemvalue="Gradle.TestTaskFive" />
       <item itemvalue="Gradle.TestTaskFive.testToStringHandlesEmptyField" />
       <item itemvalue="JUnit.JobTest" />
@@ -198,11 +196,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Tests in 'techjobs-oo-java17-graded.test'" />
         <item itemvalue="Gradle.TestTaskFive" />
         <item itemvalue="Gradle.TestTaskFive.testToStringHandlesEmptyField" />
         <item itemvalue="JUnit.org.launchcode.techjobs.oo in techjobs-oo-java17-graded.main" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Gradle.JobTest" />
       </list>
     </recent_temporary>
   </component>
@@ -255,7 +253,31 @@
       <option name="project" value="LOCAL" />
       <updated>1695942320218</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Failures in line separators">
+      <option name="closed" value="true" />
+      <created>1695945290106</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1695945290106</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Failures in line separators">
+      <option name="closed" value="true" />
+      <created>1695945515745</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1695945515745</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Fixed Test">
+      <option name="closed" value="true" />
+      <created>1695945693364</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1695945693364</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -264,7 +286,8 @@
     <MESSAGE value="Finished Task 4" />
     <MESSAGE value="Finished Tasks Extending JobField. Pushing before replacing code" />
     <MESSAGE value="Failures in line separators" />
-    <option name="LAST_COMMIT_MESSAGE" value="Failures in line separators" />
+    <MESSAGE value="Fixed Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed Test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
